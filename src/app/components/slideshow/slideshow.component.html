@@ -1,0 +1,22 @@
+<section class="slideshow-container">
+    @for(slide of slides; track trackByFn) {
+        <div class="slideshow swiper-wrapper">
+            <div class="text">{{slide.description}}</div>
+        </div>
+    }
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</section>
+
+<!-- footer links slideshow -->
+<div class="footer-links-container">
+    <ul class="footer-links">
+        @for(slide of slides; track trackByFn){
+            <li class="link">
+                <button>
+                    {{slide.title}}
+                </button>
+            </li>
+        }
+    </ul>
+</div>
