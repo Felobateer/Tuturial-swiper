@@ -18,6 +18,16 @@
 }
 
 
+.exitBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
 .footer-links {
     display: flex;

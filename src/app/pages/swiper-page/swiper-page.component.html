@@ -1,10 +1,14 @@
-<section class="slideshow-container">
-    <button class="exitBtn" (click)="goBack()">&times;</button>
-    @for(slide of slides; track trackByFn) {
-        <div class="slideshow swiper-wrapper">
-            <div class="text">{{slide.description | translate}}</div>
-        </div>
-    }
+<section class="slideshowContainer">
+    <button class="exitBtn" (click)="goSlide()">&times;</button>
+    
+    <swiper-container loop="true" navigation="true">
+        @for(slide of slides; track trackByFn) {
+            <swiper-slide>
+                <div class="text">{{slide.description | translate}}</div>
+            </swiper-slide>
+        }
+    </swiper-container>
+
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </section>
@@ -20,7 +24,4 @@
             </li>
         }
     </ul>
-</div>
-
-<!-- angular-walkthrough -->
-<!-- <angular-walkthrough></angular-walkthrough> -->
+</div> 
