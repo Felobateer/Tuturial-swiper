@@ -1,0 +1,61 @@
+@import '../../../styles.css';
+
+.slideshow-container {
+  position: relative;
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  margin: auto;
+}
+
+.footer-links-container {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.exitBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.chatBtn {
+    position: absolute;
+    top: 10;
+    left: 0;
+    color: white;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 10px;
+}
+
+.link button {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+    font-family: var(--text-font-family);
+    font-weight: var(--text-weight);
+    line-height: var(--text-line-height);
+    cursor: pointer;
+    text-shadow: var(--drop-shadow);
+}
